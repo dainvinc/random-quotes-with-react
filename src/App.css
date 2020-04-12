@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -35,4 +35,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#quote-box {
+  width: 25%;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: darkslategrey;
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.6em;
+}
+
+#tweet-quote {
+  color: black;
+  padding: 5px;
+  background-color: cyan;
+  margin: 0 15px;
+  border-radius: 3px;
+  font-weight: 600;
+  text-decoration: none;
+  text-emphasis: none;
+}
+
+#new-quote {
+  border: 0;
+  padding: 5px;
+  margin: 0 15px;
+  border-radius: 3px;
+  background-color: cyan;
+  font-weight: 700;
+  outline: none;
+}
+
+#tweet-quote:hover, #new-quote:hover {
+  background-color: darkcyan;
+  cursor: pointer;
+}
+
+.quote-footer {
+  display: flex;
+  align-self: start;
+  justify-content: space-between;
+}
+
+.creator {
+  font-size: 0.6em;
 }
