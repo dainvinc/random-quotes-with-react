@@ -23,7 +23,6 @@ class App extends React.Component {
   async changeQuote() {
     let response = await axios.get(api);
 
-    console.log(response.data);
     this.props.newQuote(response.data.content, response.data.author);
   }
 
@@ -34,7 +33,7 @@ class App extends React.Component {
           { this.props.loading ? <Loading /> 
             : <QuoteBox quote={this.props.quote} author={this.props.author} changeQuote={this.changeQuote} />
           }
-          <span className="creator"><i className="fa fa-heart" /> by Vishal</span>
+          <span className="creator"><i className="fa fa-heart red" /> by Vishal</span>
         </header>
       </div>
     );
